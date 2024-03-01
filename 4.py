@@ -1,3 +1,5 @@
+# Project Euler problem 4: Find the largest palindrome made from the product of two 3-digit numbers
+
 def isPalindrome(num):
     num = str(num)
     i = 0

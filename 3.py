@@ -1,6 +1,6 @@
+# Project Euler problem 3: what is the largest prime factor of the following number:
+
 num = 600851475143
-#num = 13195
-#limiter = 2
 
 # Note: This function can be improved: loop through sqrt(n)
 

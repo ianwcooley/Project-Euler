@@ -1,3 +1,4 @@
+# Project Euler problem 2: Find the sum of the even Fibonacci numbers below four million
 sum = 0
 fib1 = 1
 fib2 = 1

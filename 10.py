@@ -1,6 +1,7 @@
-# Project Euler problem 7: What is the 10001st prime number?
+# Project Euler problem 10: Find the sum of all the primes below two million.
 
 from math import isqrt
+
 def is_prime(n: int) -> bool:
     if n <= 3:
         return n > 1
@@ -12,15 +13,11 @@ def is_prime(n: int) -> bool:
             return False
     return True
 
-numPrime = 0
-prime = 0
-num = 0
-while (numPrime < 10001):
-    num += 1
-    if (is_prime(num)):
-        prime = num
-        numPrime += 1
+def sumPrimesLessThan(num):
+    sum = 0
+    for i in range(2, num):
+        if is_prime(i):
+            sum += i
+    return sum
 
-print(prime)
-        
-    
+print(sumPrimesLessThan(2000000))
