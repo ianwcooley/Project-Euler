@@ -8,8 +8,6 @@ for number in numbers:
     number = number.strip()
 textFile.close()
 
-print(len(numbers))
-
 # Add numbers using the addition algorithm from elementary school:
 totalSum = [] # the sum of all numbers, one character per digit
 columnSum = 0 # running sum from each column - (no worries about it getting too big because we only have 100 numbers to work with)
