@@ -2,12 +2,12 @@
 
 # (Just as we wrote an addition algorithm for very large integers in problem 13,
 # representing those integers as strings, we do the same here for the operation
-# of multiplying a very large integer by 2:
+# of multiplying a very large integer by 2):
 
 digits = [1] # the digits of the number, in reverse order
 
 for n in range (0, 1000):
-    # double all digits:
+    # double all digits
     for i in range(0, len(digits)):
         digits[i] *= 2
     # adjust for double digit results by augmenting next digit by 1
