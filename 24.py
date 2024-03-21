@@ -3,20 +3,16 @@
 
 import math
 
+digits = list(range(0,10))
+number = []
+place = 999999
+for i in range(len(digits) - 1, -1, -1):
+    print(place // math.factorial(i))
+    digit = digits[place // math.factorial(i)]
+    digits.remove(digit)
+    number.append(digit)
+    place = place % math.factorial(i)
+    print(place)
 
-
-
-# This almost works - keep it
-
-# def printPermutations(arr):
-#     if len(arr) == 0:
-#         print('') # print a new line and move on
-#     else:
-#         for i in range(0, len(arr)):
-#             digit = arr[i]
-#             arr.remove(digit)
-#             print(digit, end='')
-#             printPermutations(arr)
-#             arr.insert(i, digit)
-  
-# printPermutations([0,1,2])
+print(number)
+print(''.join(map(str, number)))
