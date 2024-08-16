@@ -61,5 +61,3 @@ while True:
     # and try to make our next combination:
     combination_sum -= combination[-1]
     combination.pop()
-
-# test_file.close()
